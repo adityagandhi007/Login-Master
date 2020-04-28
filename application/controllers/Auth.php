@@ -126,7 +126,7 @@ class Auth extends CI_Controller
             'protocol'  => 'smtp',
             'smtp_host' => 'ssl://smtp.googlemail.com',
             'smtp_user' => 'muzt.gandhi1119@gmail.com',//email pengirim yang di gunakan
-            'smtp_pass' => '@dityagandhi007',//password email
+            'smtp_pass' => 'Gandhi426344',//password email
             'smtp_port' => '465',
             'mailtype'  => 'html',
             'charset'   => 'utf-8',
@@ -135,7 +135,7 @@ class Auth extends CI_Controller
 
         $this->email->initialize($config);
 
-        $this->email->from('muzt.gandhi1119@gmail.com', 'Verifikasi Akun WPU ');
+        $this->email->from('muzt.gandhi1119@gmail.com', 'Verifikasi Akun Web Programing ');
         $this->email->to($this->input->post('email'));
 
         if ($type == 'verify') {
